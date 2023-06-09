@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  
+<body>
+    <h1>Assignment-No(43-48)</h1>
+    <h2>Question-5</h2>
+    
+<h3>Counter: <span id="counter">0</span></h3>
+
+<button onclick="increaseCounter()">Increase</button>
+<button onclick="decreaseCounter()">Decrease</button>
+
+<script>
+let counterValue = 0;
+
+function increaseCounter() {
+  counterValue++;
+  updateCounter();
+}
+
+function decreaseCounter() {
+  if (counterValue > 0) {
+    counterValue--;
+    updateCounter();
+  }
+}
+
+function updateCounter() {
+  let counterElement = document.getElementById("counter");
+  counterElement.textContent = counterValue;
+}
+</script>
+
+</body>
+</html>
